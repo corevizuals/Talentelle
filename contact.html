@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Talentelle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo">
+        <img src="../images/talentelle-logo-test.png" alt="Talentelle Logo" class="header-logo">
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About Us</a>
+      <a href="programs.html">Programs</a>
+      <a href="themovie.html">The Movie</a>
+      <a href="thedaringmap.html">The Daring Map</a>
+    </nav>
+    <a href="contact.html" class="contact-link">
+      <div>Contact</div>
+    </a>
+  </header>
+
+  <form class="form-style-7" action="https://formspree.io/f/mrbzparq" method="post">
+    <h1>Fill Form</h1>
+    <ul>
+      <li>
+        <label for="name">Name</label>
+        <input type="text" name="name" maxlength="100" required>
+        <span>Enter your full name here</span>
+      </li>
+      <li>
+        <label for="email">Email</label>
+        <input type="email" name="email" maxlength="100" required>
+        <span>Enter a valid email address</span>
+      </li>
+      <li>
+        <label for="url">Website</label>
+        <input type="url" id="url" name="url" maxlength="100" required>
+        <span>Your website address (e.g., http://www.google.com)</span>
+      </li>
+      <li>
+        <label for="bio">Message</label>
+        <textarea name="bio" id="message" onkeyup="adjust_textarea(this)" required></textarea>
+        <span>How can we help</span>
+      </li>
+      <li>
+        <input type="submit" value="Send This">
+      </li>
+    </ul>
+  </form>
+
+    <footer class="footer">
+      <div class="footer-container">
+          <!-- 1st Column: Talentelle Logo and Description -->
+          <div class="footer-column">
+              <img src="../images/talentelle-logo-test.png" alt="Talentelle Logo" class="footer-logo" />
+              <p>Talentelle is dedicated to empowering women entrepreneurs through resources, tools, and support.</p>
+          </div>
+
+          <!-- 2nd Column: Links -->
+          <div class="footer-column">
+              <h3>Get Help</h3>
+              <ul>
+                  <li><a href="/contact-us">Contact Us</a></li>
+                  <li><a href="/faq">FAQ</a></li>
+              </ul>
+          </div>
+
+          <!-- 3rd Column: Categories -->
+          <div class="footer-column">
+              <h3>Programs</h3>
+              <ul>
+                  <li><a href="/art-design">Art & Design</a></li>
+                  <li><a href="/business">Business</a></li>
+                  <li><a href="/it-software">IT & Software</a></li>
+                  <li><a href="/languages">Languages</a></li>
+                  <li><a href="/programming">Programming</a></li>
+              </ul>
+          </div>
+
+          <!-- 4th Column: Contact Information -->
+          <div class="footer-column">
+              <h3>Contact Us</h3>
+              <p>Address: Montreal, Quebec</p>
+              <p>Telephone: (514) XXX-XXXX</p>
+              <p>Email: <a href="mailto:info@talentelle.com">info@talentelle.com</a></p>
+              <div class="social-icons">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-tiktok"></i></a>
+              </div>
+          </div>
+      </div>
+      <p class="copyright-text">Copyright © 2024 | Powered by Core Vizuals</p>
+    </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    document.getElementById('url').addEventListener('blur', function() {
+      const urlField = this;
+      if (urlField.value && !urlField.value.startsWith('http://') && !urlField.value.startsWith('https://')) {
+        urlField.value = 'http://' + urlField.value;
+      }
+    });
+  </script>
+</body>
+</html>

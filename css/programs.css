@@ -1,0 +1,318 @@
+/* Global Styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+background: #ffffff;
+color: #000;
+/* padding: 1.5em 2.5em; */
+}
+
+/* Header Styles */
+
+h1 {
+text-transform: uppercase;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+padding: 1.5em 0   2.5em;
+margin: 0 2.5%;
+height: 5vh;
+background: #ffffff;
+/* position:fixed;
+top: 0;
+width:95%; */
+}
+
+.header-logo {
+max-width: 70%;
+}
+
+nav a:link {
+padding:0 .5em;
+color:#FF782D;
+text-decoration: none;
+}
+nav a:visited {
+padding:0 .5em;
+color:#FF782D;
+text-decoration: none;
+}
+
+nav a:hover {
+color:#333;
+text-decoration: underline;
+}
+
+.contact-link {
+text-decoration: none;
+font-size: 16px;
+color:#FF782D;
+}
+
+.contact-link:hover {
+color:#333;
+text-decoration: underline;
+}
+
+.contact-link div {
+cursor: pointer;
+font-family: 'Roboto', sans-serif;
+}
+
+
+/* Breadcrumb Styles */
+.breadcrumb {
+    padding: 20px 50px;
+    background: #f5f5f5;
+}
+
+.breadcrumb a {
+    color: #666;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: #FF6B35;
+}
+
+/* Main layout for the page */
+.container {
+display: flex;
+gap: 20px;
+margin: 20px auto;
+max-width: 1200px;
+padding: 10px;
+}
+
+.courses {
+flex: 3;
+}
+
+.course-list {
+display: grid;
+grid-template-columns: 1fr; /* Single card per row */
+gap: 20px;
+}
+
+.course-card {
+display: flex;           /* Makes the container a flexbox */
+align-items: center;     
+border: 1px solid #ccc;  
+border-radius: 8px;      
+padding: 16px;           
+margin: 16px 0;          
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Image Styling */
+.course-thumbnail {
+width: 250px;           
+height: auto;           
+border-radius: 8px;      
+margin-right: 16px;      
+}
+
+/* Description Styling */
+.course-info {
+flex: 1;                 
+}
+
+.course-info h2 {
+margin: 0 0 8px;         
+font-size: 20px;         
+color: #333; 
+}
+
+.course-info p {
+margin: 4px 0;
+color: #666;
+}
+
+.course-price {
+font-weight: bold;
+color: #007bff;
+}
+
+.btn {
+display: inline-block;   
+padding: 8px 16px;       
+background-color: #FF782D;
+color: #fff;           
+text-decoration: none;  
+border-radius: 4px;    
+margin-top: 8px;       
+}
+
+.btn:hover {
+background-color: #333; /* Darker shade on hover */
+}
+
+/* Sidebar (filters, titles, stars, etc) */
+.sidebar {
+flex: 1;
+background: #f9f9f9;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group h4 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.filter-group ul {
+  list-style: none;
+  padding: 0;
+}
+
+.filter-group ul li {
+  margin: 5px 0;
+}
+
+.filter-group ul li a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 0.9rem;
+}
+
+.filter-group ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Pagination Bar Styles */
+.pagination {
+display: flex;
+justify-content: center; /* Center align the pagination bar */
+align-items: center;
+gap: 10px; 
+margin: 20px 0; 
+font-size: 16px; 
+}
+
+.pagination a {
+text-decoration: none;
+color: #FF782D;
+border: 1px solid #ddd;
+padding: 8px 12px;
+border-radius: 5px;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination a:hover {
+background-color: #333;
+color: #fff;
+}
+
+.pagination a.active {
+background-color: #FF782D;
+color: #fff;
+font-weight: bold;
+}
+
+.pagination a.prev,
+.pagination a.next {
+font-weight: bold;
+}
+
+
+/* Footer section */
+
+.footer {
+background-color: #f8f9fa; 
+padding: 40px 20px; 
+}
+
+.footer-container {
+display: flex; 
+justify-content: space-between; 
+max-width: 1200px; 
+margin: 0 auto; 
+}
+
+.footer-column {
+flex: 1; 
+margin: 0 20px; 
+}
+
+.footer-logo {
+max-width: 100px; 
+}
+
+h3 {
+margin-bottom: 10px; 
+}
+
+ul {
+list-style-type: none; 
+padding: 0; 
+}
+
+ul li {
+margin-bottom: 8px; 
+}
+
+.social-icons a {
+margin-right: 10px; 
+}
+
+.footer-column a {
+color: grey; 
+text-decoration: none; 
+transition: color 0.3s ease; 
+}
+
+.footer-column a:hover {
+color: #FF782D; 
+}
+
+/* Social Media Icons */
+
+.social-icons {
+display: flex;
+gap: 15px; 
+font-size: 20px;
+}
+
+.social-icons svg {
+width: 24px; 
+height: 24px; 
+transition: fill 0.3s; 
+}
+
+.social-icons a {
+display: inline-block; 
+}
+
+.social-icons a:hover svg {
+fill: #FF782D; 
+}
+
+.copyright-text {
+text-align: center; 
+font-size: 14px; 
+color: grey; 
+margin-top: 80px; 
+margin-bottom: 10px; 
+padding: 20px 0; 
+border-top: 1px solid rgba(0, 0, 0, 0.1); 
+}

@@ -1,0 +1,270 @@
+/* General Reset for All Elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 0 2.5em;
+    margin: 0 2.5% 1.5em;
+    height: 5vh;
+}
+
+.header-logo {
+    max-width: 70%; /* Prevents scaling issues */
+}
+
+nav a:link {
+    padding:0 .5em;
+    color:#FF782D;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+  nav a:visited {
+    padding:0 .5em;
+    color:#FF782D;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-link {
+    text-decoration: none;
+    font-size: 16px;
+}
+  
+.contact-link:hover {
+    color:#333;
+    text-decoration: underline;
+ }
+
+.contact-link div {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    color:#FF782D;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-link div {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:visited {
+    color: #000000;
+}
+
+/* Contact Form Styling */
+
+.form-style-7 {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 2px;
+    padding: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-7 h1 {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0px 0px 20px 0px;
+    color: #5C5C5C;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+.form-style-7 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.form-style-7 li {
+    display: block;
+    padding: 9px;
+    border: 1px solid #DDDDDD;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+.form-style-7 li:last-child {
+    border: none;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/* Label Styling */
+
+.form-style-7 li > label {
+    display: block;
+    float: left;
+    margin-top: -19px;
+    background: #FFFFFF;
+    height: 14px;
+    padding: 2px 5px;
+    color: #B9B9B9;
+    font-size: 14px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Input and Textarea Styling */
+
+.form-style-7 input[type="text"],
+.form-style-7 input[type="date"],
+.form-style-7 input[type="datetime"],
+.form-style-7 input[type="email"],
+.form-style-7 input[type="number"],
+.form-style-7 input[type="search"],
+.form-style-7 input[type="time"],
+.form-style-7 input[type="url"],
+.form-style-7 input[type="password"],
+.form-style-7 textarea,
+.form-style-7 select {
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-7 textarea {
+    resize: none;
+}
+.form-style-7 input[type="submit"],
+.form-style-7 input[type="button"] {
+    background: #2471FF;
+    border: none;
+    padding: 10px 20px;
+    border-bottom: 3px solid #5994FF;
+    border-radius: 3px;
+    color: #D2E2FF;
+}
+.form-style-7 input[type="submit"]:hover,
+.form-style-7 input[type="button"]:hover {
+    background: #6B9FFF;
+    color: #fff;
+}
+/* Form Message Styling */
+.form-style-7 li > span {
+    background: #F3F3F3;
+    display: block;
+    padding: 3px;
+    margin: 0 -9px -9px -9px;
+    text-align: center;
+    color: #C0C0C0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+}
+
+#message {
+    height: 100px; 
+    line-height: normal; 
+}
+
+
+
+/* Footer section */
+
+.footer {
+background-color: #f8f9fa; 
+padding: 40px 20px; 
+}
+
+.footer-container {
+display: flex; 
+justify-content: space-between; 
+max-width: 1200px; 
+margin: 0 auto; 
+}
+
+.footer-column {
+flex: 1; 
+margin: 0 20px; 
+}
+
+.footer-logo {
+max-width: 100px; 
+}
+
+h3 {
+margin-bottom: 10px; 
+}
+
+ul {
+list-style-type: none; 
+padding: 0; 
+}
+
+ul li {
+margin-bottom: 8px; 
+}
+
+.social-icons a {
+margin-right: 10px; 
+}
+
+.footer-column a {
+color: grey; 
+text-decoration: none; 
+transition: color 0.3s ease; 
+}
+
+.footer-column a:hover {
+color: #FF782D; 
+}
+
+.social-icons {
+display: flex;
+gap: 15px; 
+font-size: 20px;
+}
+
+.social-icons svg {
+width: 24px; 
+height: 24px; 
+transition: fill 0.3s; 
+}
+
+.social-icons a {
+display: inline-block; 
+}
+
+.social-icons a:hover svg {
+fill: #FF782D; 
+}
+
+.copyright-text {
+text-align: center; 
+font-size: 14px; 
+color: grey; 
+margin-top: 80px; 
+margin-bottom: 10px; 
+padding: 20px 0; 
+border-top: 1px solid rgba(0, 0, 0, 0.1); 
+}
